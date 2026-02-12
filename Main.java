@@ -20,5 +20,15 @@ public class Main {
          // Increment line counter
          i++;
       }
+      randomPokemon(pokemonLines.length, pokemonLines);
+      
    }
+   public static void randomPokemon(int lenghth, String[] pokemonLines){
+         // generat random in from 1 to array lenth
+         int randIndex = (int) (Math.random()*lenghth+1);
+         System.out.println(randIndex);
+         String randPokeLine = pokemonLines[randIndex];
+         System.out.println(randPokeLine);
+      }
 }
+
